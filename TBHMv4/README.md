@@ -25,12 +25,15 @@ $ amass intel -asn <ASXXXX>
 	* [DOMLink](https://github.com/vysecurity/DomLink)
 - WebAppInfo
 	* [BuiltWith](https://builtwith.com/)
+	* [Shodan](https://www.shodan.io/)
 	* GoogleFu 
 ```
+
  "<COPYRIGHT_TEXT|TERMS_PF_SERVICE|PRIVACY_POLICY>" inurl:<DOMAIN>
+
 ```
 
-	* [Shodan](https://www.shodan.io/)
+
 ## Subdomain Enumeration
 
 - Linked and JS Discovery
