@@ -19,6 +19,7 @@ A scheme tree for the recon mindset
 ```bash
 $ amass intel -asn <ASXXXX>
 ```
+
 - Reverse Whois:
 	* [Whoxy](https://www.whoxy.com/)
 	* [DOMLink](https://github.com/vysecurity/DomLink)
@@ -28,6 +29,7 @@ $ amass intel -asn <ASXXXX>
 ```
  "<COPYRIGHT_TEXT|TERMS_PF_SERVICE|PRIVACY_POLICY>" inurl:<DOMAIN>
 ```
+
 	* [Shodan](https://www.shodan.io/)
 ## Subdomain Enumeration
 
@@ -46,11 +48,13 @@ site:twitch.tv -www.twitch.tv -watch.twitch.tv
 site:twitch.tv -www.twitch.tv -watch.twitch.tv -dev.twitch.tv
 ...
 ```
+
 	* [Amass](https://github.com/OWASP/Amass)/[Subfinder](https://github.com/projectdiscovery/subfinder)
 ```bash
 $ amass enum -d <DOMAIN>
 $ subfinder -d <DOMAIN> -v
 ```
+
 	* [github-subdomains](https://github.com/gwen001/github-subdomains) (5 iter, Rate Limited every 6 seconds, last 10s) /[Gwendal Le Cogwic](https://github.com/gwen001)
 	* [shosubgo][https://github.com/0xrod/shosubgo]
 	* [bufferover.run](https://bufferover.run/dns?q=<DOMAIN>) / [MassScan](https://github.com/robertdavidgraham/masscan)
@@ -61,6 +65,7 @@ $ subfinder -d <DOMAIN> -v
 $ amass enum -brute -d <DOMAIN> -src # <- built in wordlist
 $ amass enum -brute -d <DOMAIN> -rf reseolvers.txt -w bruteforce.list
 ```
+
 	* [ShuffleDNS](https://github.com/projectdiscovery/shuffledns)
 - Wordlists:
 	* [Jason Haddix all.txt](https://gist.github.com/jhaddix/f64c97d0863a78454e44c2f7119c2a6a)
@@ -73,6 +78,7 @@ $ amass enum -brute -d <DOMAIN> -rf reseolvers.txt -w bruteforce.list
 ```bash
 $ masscan -p1-65535 -iL $ipFile --max-rate 1800 -oG $outFile.log
 ```
+
 	* [dnmasscan](https://github.com/rastating/dnmasscan) (for domain names port scannig)
 	* [brutespray](https://github.com/x90skysn3k/brutespray) (takes nmap oG file format to scan administration protocols for default passwords)
 	* [Jhaddix google dorks script](https://gist.github.com/jhaddix/1fb7ab2409ab579178d2a79959909b33)
